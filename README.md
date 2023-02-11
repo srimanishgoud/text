@@ -4,7 +4,7 @@
 
 21.  `=` : Assignment operator
     
-    **Operands**: x (`Variable`), a (`AST`)
+    __Operands__: x (`Variable`), a (`AST`)
 
     **Returns**: (`Float|Int|Bool|Str`) - returns the evaluated value of a
 
