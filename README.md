@@ -17,5 +17,6 @@ $$Variable=Bool  \rightarrow  Bool$$
 $$Variable=Str  \rightarrow  Str$$
 
 
-manish \\
+manish   
+
 nithish
