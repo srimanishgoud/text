@@ -49,8 +49,8 @@ $$assignment  \rightarrow  identifier "="assignment ~~~ | ~~~ logicOr ~~~ $$
 $$logicOr \rightarrow  logicAnd ~~ (~~ "||" ~~ logicAnd ~~ )^* ~~ $$
 $$logicAnd \rightarrow  equality ~~ (~~ "&&" ~~ equality ~~ )^* ~~ $$
 $$equality  \rightarrow  comparision ~~ ( ~ ( ~ "!=" ~ | ~ "==" ~ ) ~~ comparision)^* ~~ $$
-$$comparision  \rightarrow  add(~ (~ ">"~ |~ ">="~ |~ "<"~ |~ "<="~ )~ add~ )^*$$
-$$add  \rightarrow mult( ~ ("-" ~ | ~ "+") ~ mult)^*$$
-$$mult  \rightarrow  unary( ~ ("/" ~ | ~ "*") ~ unary ~ )^*$$
+$$comparision  \rightarrow  add(~ (~ ">"~ |~ ">="~ |~ "<"~ |~ "<="~ )~ add~ )^* ~~ $$
+$$add  \rightarrow mult( ~ ("-" ~ | ~ "+") ~ mult)^* ~~ $$
+$$mult  \rightarrow  unary( ~ ("/" ~ | ~ "*") ~ unary ~ )^* ~~ $$
 $$unary  \rightarrow  ("!" ~ | ~ "-") ~ unary ~~ |~~ atom$$
 $$atom  \rightarrow  Identifier ~~ | ~~ Int ~~ | ~~ Bool ~~ | ~~ String ~~ | ~~ Float ~~ | ~~ nil ~~ | ~~ "(" ~ expression ~ ")"$$
