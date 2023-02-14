@@ -47,7 +47,7 @@ $$expression ~ Statement  \rightarrow  expression ~~ ";"$$
 $$expression \rightarrow  assignment$$
 $$assignment  \rightarrow  identifier "="assignment ~~~ | ~~~ logicOr ~~~ $$
 $$logicOr \rightarrow  logicAnd ~~ (~~ "||" ~~ logicAnd ~~ )^* ~~ $$
-$$logicAnd \rightarrow  equality ~~ ( ~~ "\And==&" ~~ equality ~~ )^* ~~ $$
+$$logicAnd \rightarrow  equality ~~ ( ~~ "\And == &" ~~ equality ~~ )^* ~~ $$
 $$equality  \rightarrow  comparision ~~ ( ~ ( ~ "!=" ~ | ~ "==" ~ ) ~~ comparision)^* ~~ $$
 $$comparision  \rightarrow  add(~ (~ ">"~ |~ ">="~ |~ "<"~ |~ "<="~ )~ add~ )^* ~~ $$
 $$add  \rightarrow mult( ~ ("-" ~ | ~ "+") ~ mult)^* ~~ $$
