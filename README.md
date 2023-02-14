@@ -47,7 +47,7 @@ $$expression ~ Statement  \rightarrow  expression ~~ ";"$$
 $$expression \rightarrow  assignment$$
 $$assignment  \rightarrow  identifier "="assignment ~~~ | ~~~ logicOr ~~~ $$
 $$logicOr \rightarrow  logicAnd ~~ (~~ "||" ~~ logicAnd ~~ )^* ~~ $$
-$$logicAnd \rightarrow  equality ~~ ( ~~ "\texttt{\&\&}" ~~ equality ~~ )^* ~~ $$
+$$logicAnd \rightarrow  equality ~~ ( ~~ "\texttt{ampamp}" ~~ equality ~~ )^* ~~ $$
 $$equality  \rightarrow  comparision ~~ ( ~ ( ~ "!=" ~ | ~ "==" ~ ) ~~ comparision)^* ~~ $$
 $$comparision  \rightarrow  add(~ (~ ">"~ |~ ">="~ |~ "<"~ |~ "<="~ )~ add~ )^* ~~ $$
 $$add  \rightarrow mult( ~ ("-" ~ | ~ "+") ~ mult)^* ~~ $$
