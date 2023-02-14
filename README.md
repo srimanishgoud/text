@@ -38,7 +38,7 @@ The Operator Precedence from lowest to highest.
 $$~program  \rightarrow  (declaration)^*~~ EOF$$
 $$declaration  \rightarrow  vardec  ~~ | ~~ statement$$
 $$statement  \rightarrow  expression ~ Statement ~ | ~ print ~ Statement ~ | ~ if ~ Statement ~ | ~ while ~ Statement ~ | ~ for ~ Statement$$
-$$vardec \rightarrow  "var" ~~ identifier ~~ ( ~ "=" ~ expression) ~ ? ~ ";"$$
+$$vardec \rightarrow  "var" ~~ identifier ~~ ( ~ `"="` ~ expression) ~ ? ~ ";"$$
 $$while ~ Statement  \rightarrow  "while" ~~ "(" ~~ expression ~~ ")" ~~ "\{" ~~ declaration ~~ "\}" ~~ $$
 $$if ~ Statement  \rightarrow  "if" ~~ "(" ~~ expression ~~ ")" ~~ "\{" ~~ declaration ~~ "\}" ~~ ("else" ~~ "\{" ~~ declaration ~~ "\}")? ~~ $$
 $$print ~ Statement  \rightarrow  "zout" ~ "("~ expression ~ ")" ~ ";"$$
